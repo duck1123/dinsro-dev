@@ -5,3 +5,4 @@ stages:
       dockerfilePath: ./Dockerfile-dev
       buildContext: .
       tag: duck1123/dinsro-dev:${CICD_EXECUTION_SEQUENCE}
+      pushRemote: true
