@@ -9,4 +9,7 @@ WORKDIR /usr/src/app
 RUN apt update && apt install -y \
         chromium \
         && rm -rf /var/lib/apt/lists/*
+
+RUN npm install -g karma-cli
+
 ENV CHROME_BIN=/usr/bin/chromium
