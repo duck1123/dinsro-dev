@@ -17,15 +17,10 @@ spec:
     command: ['cat']
     tty: true
     volumeMounts:
-    - name: docker-sock
-      mountPath: /var/run/docker.sock
     - name: dockerhub-creds
       mountPath: /dockerhub-creds
       readOnly: true
   volumes:
-  - name: docker-sock
-    hostPath:
-      path: /var/run/docker.sock
   - name: dockerhub-creds
     secret:
       secretName: dockerhub-creds
