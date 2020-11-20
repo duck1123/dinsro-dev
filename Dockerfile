@@ -1,5 +1,6 @@
+FROM circleci/clojure:openjdk-15-tools-deps-buster-node-browsers-legacy:latest
+# FROM theasp/clojurescript-nodejs:latest
 # FROM clojure
-FROM theasp/clojurescript-nodejs:latest
 
 LABEL maintainer="Duck Nebuchadnezzar <duck@kronkltd.net>"
 MAINTAINER Duck Nebuchadnezzar <duck@kronkltd.net>
